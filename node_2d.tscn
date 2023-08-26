@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://b7iqdpqu8qxt8"]
 
-[ext_resource type="Script" path="res://World.gd" id="1_6rs2b"]
+[ext_resource type="Script" path="res://BaseRandomGen.gd" id="1_ktxg4"]
 [ext_resource type="Texture2D" uid="uid://bes4uugcmrbfy" path="res://RandomLevelGenTileset.png" id="2_0sgt5"]
 [ext_resource type="Texture2D" uid="uid://buxjavl3p5mb3" path="res://spritesheet.png" id="3_15py7"]
 [ext_resource type="Texture2D" uid="uid://ejgo8estsoww" path="res://zone.png" id="4_44xn4"]
@@ -884,7 +884,7 @@ sources/3 = SubResource("TileSetAtlasSource_ak5xb")
 pattern_0 = SubResource("TileMapPattern_6a547")
 
 [node name="World" type="Node2D"]
-script = ExtResource("1_6rs2b")
+script = ExtResource("1_ktxg4")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_3ohj8")

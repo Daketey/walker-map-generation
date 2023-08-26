@@ -62,7 +62,7 @@ func generate_level():
 		for i in al_room:
 			selected_cells[i] = 0
 		
-		tileMap.set_cells_terrain_connect(0, al_room, 0, -1)
+#		tileMap.set_cells_terrain_connect(0, al_room, 0, -1)
 		
 		tileMap.set_cell(0, starting_postiion, 3, Vector2(14 , 4)) #use this somehow	
 		tileMap.set_cell(0, end_position, 3, Vector2(12 , 4)) #use this somehow
@@ -100,9 +100,9 @@ func generate_level():
 		# ###########################################################################
 		# #Compare all 3 starting position to their end position, take the best past#
 		# ###########################################################################
-	const arr = [Vector2(15, 6), Vector2(9, 6), Vector2(9, 12), Vector2(15, 12), Vector2(9, 12), Vector2(9, 18), Vector2(15, 18), Vector2(15, 12), Vector2(9, 12), Vector2(15, 12), Vector2(15, 18), Vector2(21, 18), Vector2(21, 24), Vector2(15, 24), Vector2(15, 27), Vector2(21, 27), Vector2(15, 27), Vector2(15, 21), Vector2(9, 21), Vector2(15, 21), Vector2(15, 15), Vector2(9, 15), Vector2(9, 9), Vector2(9, 15), Vector2(9, 9), Vector2(9, 15), Vector2(15, 15), Vector2(15, 21), Vector2(15, 15), Vector2(15, 21), Vector2(21, 21), Vector2(21, 27), Vector2(27, 27), Vector2(27, 21), Vector2(27, 27), Vector2(33, 27), Vector2(33, 21), Vector2(39, 21), Vector2(39, 15), Vector2(33, 15), Vector2(33, 21), Vector2(27, 21), Vector2(27, 15), Vector2(33, 15), Vector2(27, 15), Vector2(27, 9), Vector2(27, 15), Vector2(27, 9), Vector2(27, 15), Vector2(21, 15), Vector2(21, 21), Vector2(15, 21), Vector2(15, 27), Vector2(15, 21), Vector2(9, 21), Vector2(9, 15), Vector2(9, 21), Vector2(9, 15), Vector2(9, 21), Vector2(9, 15), Vector2(15, 15), Vector2(9, 15), Vector2(9, 9), Vector2(15, 9), Vector2(9, 9), Vector2(15, 9), Vector2(15, 15), Vector2(21, 15), Vector2(21, 21), Vector2(15, 21), Vector2(21, 21), Vector2(21, 15), Vector2(27, 15), Vector2(27, 21), Vector2(33, 21), Vector2(33, 27), Vector2(33, 21), Vector2(27, 21), Vector2(27, 15), Vector2(27, 21), Vector2(27, 15), Vector2(27, 21), Vector2(33, 21), Vector2(33, 27), Vector2(33, 21), Vector2(39, 21), Vector2(39, 15), Vector2(39, 21), Vector2(41, 21), Vector2(41, 15), Vector2(41, 21), Vector2(35, 21), Vector2(35, 15), Vector2(41, 15), Vector2(35, 15), Vector2(35, 9), Vector2(35, 15), Vector2(41, 15), Vector2(41, 15)]
-	for i in arr:
-		tileMap.set_cell(0, i, 3, Vector2(12 , 7))
+#	const arr = [Vector2(15, 6), Vector2(9, 6), Vector2(9, 12), Vector2(15, 12), Vector2(9, 12), Vector2(9, 18), Vector2(15, 18), Vector2(15, 12), Vector2(9, 12), Vector2(15, 12), Vector2(15, 18), Vector2(21, 18), Vector2(21, 24), Vector2(15, 24), Vector2(15, 27), Vector2(21, 27), Vector2(15, 27), Vector2(15, 21), Vector2(9, 21), Vector2(15, 21), Vector2(15, 15), Vector2(9, 15), Vector2(9, 9), Vector2(9, 15), Vector2(9, 9), Vector2(9, 15), Vector2(15, 15), Vector2(15, 21), Vector2(15, 15), Vector2(15, 21), Vector2(21, 21), Vector2(21, 27), Vector2(27, 27), Vector2(27, 21), Vector2(27, 27), Vector2(33, 27), Vector2(33, 21), Vector2(39, 21), Vector2(39, 15), Vector2(33, 15), Vector2(33, 21), Vector2(27, 21), Vector2(27, 15), Vector2(33, 15), Vector2(27, 15), Vector2(27, 9), Vector2(27, 15), Vector2(27, 9), Vector2(27, 15), Vector2(21, 15), Vector2(21, 21), Vector2(15, 21), Vector2(15, 27), Vector2(15, 21), Vector2(9, 21), Vector2(9, 15), Vector2(9, 21), Vector2(9, 15), Vector2(9, 21), Vector2(9, 15), Vector2(15, 15), Vector2(9, 15), Vector2(9, 9), Vector2(15, 9), Vector2(9, 9), Vector2(15, 9), Vector2(15, 15), Vector2(21, 15), Vector2(21, 21), Vector2(15, 21), Vector2(21, 21), Vector2(21, 15), Vector2(27, 15), Vector2(27, 21), Vector2(33, 21), Vector2(33, 27), Vector2(33, 21), Vector2(27, 21), Vector2(27, 15), Vector2(27, 21), Vector2(27, 15), Vector2(27, 21), Vector2(33, 21), Vector2(33, 27), Vector2(33, 21), Vector2(39, 21), Vector2(39, 15), Vector2(39, 21), Vector2(41, 21), Vector2(41, 15), Vector2(41, 21), Vector2(35, 21), Vector2(35, 15), Vector2(41, 15), Vector2(35, 15), Vector2(35, 9), Vector2(35, 15), Vector2(41, 15), Vector2(41, 21), Vector2(41, 15)]
+#	for i in arr:
+#		tileMap.set_cell(0, i, 3, Vector2(12 , 7))
 		
 		
 func build_graph(edges):
